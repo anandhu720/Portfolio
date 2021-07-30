@@ -1,0 +1,376 @@
+.home{
+
+    &_heading{
+
+        padding-top:10%;
+
+        .btn{
+            background-color:#EB662D;
+            color:#fff;
+            width:15%;
+            margin-top:50px;
+            padding: 10px;
+            font-size:20px;
+        }
+
+        .btn:hover{
+            background-color:#c5440d;
+        }
+
+        .logo-home{
+            width: 5%;
+            padding: 30px 20px 0px;
+        }
+
+        h1{
+            position: relative;
+            font-weight: bold;
+            font-size:88px;
+            color:#4D4C4C;
+            -webkit-text-stroke:0.06vw #9b9797;
+        }
+
+        h2{
+            position: relative;
+            font-weight: bold;
+            font-size:64px;
+            color:#4D4C4C;
+            -webkit-text-stroke:0.06vw #9b9797;
+        }
+
+        h1::before{
+            content:attr(data-text);
+            position:absolute;
+            color:#EB662D;
+            height:100%;
+            width:0;
+            left: 0;
+            top: 0;
+            -webkit-text-stroke:0vw #757372;
+            border-right: 4px solid #EB662D;
+            overflow:hidden;
+            animation: animate 9s linear infinite;
+        }
+
+        h2::before{
+            content:attr(data-text);
+            position:absolute;
+            color:#EB662D;
+            height:100%;
+            width:0;
+            left: 0;
+            top: 0;
+            -webkit-text-stroke:0vw #757372;
+            border-right: 4px solid #EB662D;
+            overflow:hidden;
+            animation: animate1 7s linear infinite;
+        }
+
+        @keyframes animate{
+            0%,10%,20%,30%,50%,100%
+            {
+                width: 0%;
+            }
+            70%,90%
+            {
+                width: 88%;
+            }
+        }
+
+        @keyframes animate1{
+            0%,10%,20%,30%,50%,100%
+            {
+                width: 0%;
+            }
+            70%,90%
+            {
+                width: 26%;
+            }
+        }
+
+        &_dis{
+            font-size:22px;
+            color:#fff;
+            font-weight: medium;
+        }
+    }
+
+    &_second{
+        padding-top:10%;
+
+        img{
+            width: 95%;
+        }
+
+        // .col-lg-6{
+        //     padding-left: 50px;
+        // }
+
+        &_heading{
+            font-size:64px;
+            font-weight: bold;
+            color: #fff;
+            padding-bottom: 33px;
+            text-align: center;
+        }
+
+        &_dis{
+            font-size:17px;
+        }
+
+        .row{
+            margin-bottom: 50px;
+        }
+
+    }
+
+    &_third{
+
+        span{
+            font-size: 18px;
+        }
+
+        div.scrollmenu {
+            // height: 50px;
+            padding-top:5%;
+            overflow: auto;
+            white-space: nowrap;
+            padding-bottom: 30px;
+          }
+          
+          div.scrollmenu a {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px;
+            text-decoration: none;
+          }
+
+          ::-webkit-scrollbar {
+            display: none;
+        }
+
+          .icons{
+              height: 70px;
+              width: 70px;
+              margin: 0 30px;
+          }
+          .icons1{
+              height: 30px;
+              width: 100px;
+          }
+          
+          div.scrollmenu a:hover {
+            background-color: #777;
+          }
+
+        h2{
+            position: relative;
+            font-weight: bold;
+            font-size:64px;
+            color:#4D4C4C;
+            -webkit-text-stroke:0.06vw #9b9797;
+            margin-bottom: 7%;
+        }
+
+        h2::before{
+            content:attr(data-text);
+            position:absolute;
+            color:#EB662D;
+            height:100%;
+            width:0;
+            left: 0;
+            top: 0;
+            -webkit-text-stroke:0vw #757372;
+            border-right: 4px solid #EB662D;
+            overflow:hidden;
+            animation: animate2 4s linear infinite;
+        }
+
+        @keyframes animate{
+            0%,10%,20%,30%,50%,100%
+            {
+                width: 0%;
+            }
+            70%,90%
+            {
+                width: 88%;
+            }
+        }
+
+        @keyframes animate2{
+            0%,10%,20%,30%,50%,100%
+            {
+                width: 0%;
+            }
+            70%,90%
+            {
+                width: 27%;
+            }
+        }
+    }
+
+    &_fourth{
+        h1{
+            font-size: 64px;
+            font-weight: bold;
+            padding-top:7%;
+            padding-bottom: 7%;
+        }
+    }
+
+}
+
+
+@media (max-width:1025px) {
+    .home{
+
+        .btn{
+            width: 30%;
+            font-size:15px;
+            padding: 7px;
+            margin-top:30px;
+        }
+
+        .logo-home{
+            width: 10%;
+            height: 100%;
+            padding: 30px 20px 0;
+            color:#fff;
+        }
+
+        .logo-home:hover{
+            color: #fff;
+        }
+
+        h1::before{
+            border-right: none;
+        }
+
+        @keyframes animate{
+            0%,10%,20%,30%,50%,100%
+            {
+                width: 100%;
+            }
+            70%,90%
+            {
+                width: 100%;
+            }
+        }
+
+        @keyframes animate1{
+            0%,10%,30%,50%,60%,100%
+            {
+                width: 0%;
+            }
+            70%,90%
+            {
+                width: 78%;
+            }
+        }
+
+        @keyframes animate2{
+            0%,10%,20%,30%,50%,100%
+            {
+                width: 0%;
+            }
+            70%,90%
+            {
+                width: 70%;
+            }
+        }
+    }
+
+    &_second{
+
+        &_heading{
+            font-size:32px;
+        }
+
+        span{
+            font-size:15px;
+        }
+    }
+}
+
+@media (max-width:720px) {
+    .home{
+
+        .logo-home{
+            width: 14%;
+            padding: 20px 15px 10px;
+        }
+
+        &_heading{
+
+            .btn{
+                width: 40%;
+                font-size:15px;
+                padding: 5px;
+                margin-top:20px;
+            }
+
+            h1{
+                font-size:32px;
+               
+            }
+
+            h2{
+                font-size:32px;
+            }
+
+            h1::before{
+                border-right: none;
+            }
+
+            &_dis{
+                font-size:15px;
+            }
+        }
+
+        &_second{
+
+            &_heading{
+                font-size:40px;
+            }
+    
+
+        }
+
+        @keyframes animate{
+            0%,10%,20%,30%,50%,100%
+            {
+                width: 100%;
+            }
+            70%,90%
+            {
+                width: 100%;
+            }
+        }
+
+        @keyframes animate1{
+            0%,10%,30%,50%,60%,100%
+            {
+                width: 0%;
+            }
+            70%,90%
+            {
+                width: 78%;
+            }
+        }
+    }
+
+    @keyframes animate2{
+        0%,10%,20%,30%,50%,100%
+        {
+            width: 0%;
+        }
+        70%,90%
+        {
+            width: 101%;
+        }
+    }
+
+
+
+}
