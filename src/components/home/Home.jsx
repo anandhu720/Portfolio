@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import Navbar from '../navbar/Navbar';
-import './_home.scss';
+import './home.css';
 
 import {ReactComponent as GithubIcon} from '../../images/github.svg';
 import {ReactComponent as LinkdenIcon} from '../../images/linkden.svg';
