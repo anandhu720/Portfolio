@@ -29,6 +29,8 @@ import cards from '../../cards'
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { GitHub, LinkedIn, Mail } from '@material-ui/icons';
+import { Instagram } from '@material-ui/icons';
 
  
 const Home = () => {
@@ -38,7 +40,8 @@ const Home = () => {
     },[])
 
     return (
-        <div className='home'>
+        <div className="main">
+        <div className='home' id="home">
             <Navbar/>
             <div className="home_heading">
                 <h2 className="heading-main" data-text='HELLO THERE !'>HELLO THERE !</h2>
@@ -50,16 +53,16 @@ const Home = () => {
                 </div>
                 <div className="row">
                     <div className="col-md-1 logo-home">
-                        <InstaIcon/>
+                        <a target="_blank" rel="noreferrer" href="https://www.instagram.com/_a_na_ndhu__/"><InstaIcon/></a>
                     </div>
                     <div className="col-md-1 logo-home">
-                        <LinkdenIcon/>
+                        <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/anandha-krishnan-8077551b8/"><LinkdenIcon/></a>
                     </div>
                     <div className="col-md-1 logo-home">
-                        <GithubIcon/>
+                        <a target="_blank" rel="noreferrer" href="https://github.com/anandhu720"><GithubIcon/></a>
                     </div>
                 </div>
-                <button className="btn">RESUME</button> 
+                <a target="_blank" rel="noreferrer" href="https://drive.google.com/file/d/17TLcPVrp0gJnLTRgP8suWBxzFPsRw0Wa/view?usp=sharing" className="btn">RESUME</a> 
             </div>
             <div className="home_second">
                 <div className="container">
@@ -67,24 +70,20 @@ const Home = () => {
                         <div data-aos="fade-right" className="col-lg-6">
                             <img src={mainImage} alt="" />
                         </div>
-                        <div data-aos='fade-left' className="col-lg-6">
+                        <div id="about" data-aos='fade-left' className="col-lg-6">
                             <h1 className="home_second_heading">
                                 WHO AM I <span style={{color:'#EB662D'}}> ?</span> 
                             </h1>
                             <span className="home_second_dis">
-                            It is a long established fact that a reader will be distracted by the readable 
-                            content of a page when looking at its layout. The point of using Lorem 
-                            Ipsum is that it has a more-or-less normal distribution of letters, as 
-                            opposed to using 'Content here, content here', making it look like 
-                            readable English. Many desktop publishing packages and web page
-                            editors now use Lorem Ipsum as their default model text, and a search f
-                            or 'lorem ipsum' will uncover many web sites still in their infancy. 
-                            Various versions have evolved over the years, sometimes by accident, 
-                            sometimes on purpose (injected humour and the like).
-                            editors now use Lorem Ipsum as their default model text, and a search f
-                            or 'lorem ipsum' will uncover many web sites still in their infancy. 
-                            Various versions have evolved over the years, sometimes by accident, 
-                            sometimes on purpose (injected humour and the like
+                            My Name is Anandha Krishnan Valiyaveetil Kamalon .
+                            I Am from Kerala,India.I am 19 years old now.
+                            Currently I am pursuing Bachelor's degree in Computer Science Engineering at LPU Punjab.
+                            I finished my high school education at Kasaragod,Kerala.
+                            I have a great knowledge in Web development and I have finished many projects like YouTube clone,
+                            Disney+ Hotstar UI clone,To-do list.Now I am trying to master Block Chain.
+                            I am so fascinated about Web 3.0 and block chain.I strongly believe that block chain
+                            can bring lot of changes in our world.I see a great future in block chain development.
+                            So I am now trying to master Block Chain development.
                             </span>
                         </div>
                     </div>
@@ -94,19 +93,14 @@ const Home = () => {
                                 WHAT I DO <span style={{color:'#EB662D'}}> ?</span> 
                             </h1>
                             <span className="home_second_dis">
-                            It is a long established fact that a reader will be distracted by the readable 
-                            content of a page when looking at its layout. The point of using Lorem 
-                            Ipsum is that it has a more-or-less normal distribution of letters, as 
-                            opposed to using 'Content here, content here', making it look like 
-                            readable English. Many desktop publishing packages and web page
-                            editors now use Lorem Ipsum as their default model text, and a search f
-                            or 'lorem ipsum' will uncover many web sites still in their infancy. 
-                            Various versions have evolved over the years, sometimes by accident, 
-                            sometimes on purpose (injected humour and the like).
-                            editors now use Lorem Ipsum as their default model text, and a search f
-                            or 'lorem ipsum' will uncover many web sites still in their infancy. 
-                            Various versions have evolved over the years, sometimes by accident, 
-                            sometimes on purpose (injected humour and the like
+                                I am a full stack web developer.I use to create responsive
+                                modern web apps that helps others and makes others work easy.
+                                I have great knowledge in frontend development using React.js and 
+                                I love to use React.js.It helps to developers to create simple and powerful 
+                                user interfaces.I have also worked with redux for state management in large scale web apps.
+                                I use Nodejs,Express.js and mongodb in backend development.Now I am studying 
+                                Block Chain development.Currently I am working with Solidity and Ethereum to 
+                                create Web 3.0 apps.I strongly believe Web 3.0 will make revolution in internet. 
                             </span>
                         </div>
                         <div data-aos="fade-left" className="col-lg-6">
@@ -123,26 +117,21 @@ const Home = () => {
                         AS A WEB DEVELOPER I AM
                         REALLY GOOD AT HTML,CSS,
                         SCSS AND JAVASCRIPT.
+                        ALSO I HAVE GOOD KNOWLEDGE IN FIREBASE.
                         I USALLY WORK WITH REACT,JS
-                        FRAMEWORK AND REDUX
+                        FRAMEWORK,REDUX,BOOTSTRAP AND MATERIAL UI
                         IN FRONT-END AND NODE.JS,
                         EXPRESS.JS AND MONGODB
-                        IN BACKEND.ALSO I WORK WITH SOLIDITY TO CREATE SMART CONTRACTS AND MAKE FUTURESTIC WEB 3.0 WEB APPS USING BLOCKCHAIN.
-                        AS A WEB DEVELOPER I AM
-                        REALLY GOOD AT HTML,CSS,
-                        SCSS AND JAVASCRIPT.
-                        I USALLY WORK WITH REACT,JS
-                        FRAMEWORK AND REDUX
-                        IN FRONT-END AND NODE.JS,
-                        EXPRESS.JS AND MONGODB
-                        IN BACKEND.ALSO I WORK WITH SOLIDITY TO CREATE SMART CONTRACTS AND MAKE FUTURESTIC WEB 3.0 WEB APPS USING BLOCKCHAIN.
+                        IN BACKEND.CURRENTLY I AM WORKING WITH SOLIDITY AND ETHEREUM TO CREATE SMART CONTRACTS AND
+                        TO MAKE FUTURESTIC WEB 3.0 WEB USING BLOCKCHAIN.
+                        
                         </span>
                     </div>
                     <div data-aos="fade-left" className="col-lg-6">
                         <img width="100%" src={codingImage} alt="" />
                     </div>
                 </div>
-                <div data-aos="fade-left" class="scrollmenu">
+                <div data-aos="fade-left" className="scrollmenu">
                     <JsIcon className="icons" />
                     <ReactIcon className="icons" />
                     <ReduxIcon className="icons" />
@@ -161,12 +150,12 @@ const Home = () => {
             </div>
             <div className="home_fourth">
                 <h1 data-aos="fade-down"><span style={{color:'#EB662D'}}>MY POPULAR </span>WORKS</h1>
-                <div data-aos='fade-left' class="container-fluid">
-                    <div class="row flex-nowrap">
+                <div data-aos='fade-left' className="container-fluid">
+                    <div className="row flex-nowrap">
                     {
                                 cards.map(card =>
-                                    <div class="col-lg-3 col-md-6">
-                                        <div class="card card-block" style={{
+                                    <div className="col-lg-3 col-md-6">
+                                        <div className="card card-block" style={{
                                             backgroundImage: `url(${card.img})`
                                         }}>
                                             <div className="card-content mt-auto">
@@ -185,6 +174,25 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+        </div>
+        <footer className="footer">
+                <div className="footer_content">
+                    <h3>ANANDHA KRISHNAN V K</h3>
+                    <p>KASARGOD,KERALA</p>
+                    <p>anandhu4310@gmail.com</p>
+                    <p>PH NO : 7025125075</p>
+                    <ul className="footer_content_socials">
+                        <li><a target="_blank" rel="noreferrer" href="https://github.com/anandhu720"><GitHub/></a></li>
+                        <li><a target="_blank" rel="noreferrer" href="https://www.instagram.com/_a_na_ndhu__/"><Instagram/></a></li>
+                        <li><a target="_blank" rel="noreferrer" href="mailto:anandhu4310@gmail.com"><Mail/></a></li>
+                        <li><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/anandha-krishnan-8077551b8/"><LinkedIn/></a></li>
+
+                    </ul>
+                </div>
+                <div className="footer_bottom">
+                    <p>Copyright &copy;2021-22.Designed by <span>Anandha Krishnan</span></p>
+                </div>
+            </footer>
         </div>
     )
 }

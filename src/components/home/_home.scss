@@ -1,8 +1,17 @@
+.main{
+    margin: 0;
+
+}
+
 .home{
+
+    padding: 0 30px;
+
 
     &_heading{
 
         padding-top:10%;
+        
 
         .btn{
             background-color:#EB662D;
@@ -20,6 +29,11 @@
         .logo-home{
             width: 5%;
             padding: 30px 20px 0px;
+
+            a{
+                color:#fff;
+            }
+
         }
 
         h1{
@@ -115,7 +129,7 @@
         }
 
         &_dis{
-            font-size:17px;
+            font-size:20px;
         }
 
         .row{
@@ -127,7 +141,8 @@
     &_third{
 
         span{
-            font-size: 18px;
+            font-size: 20px;
+            
         }
 
         div.scrollmenu {
@@ -325,6 +340,79 @@
         }
 
     }
+
+}
+
+.footer{
+
+    background-color: #EB662D;
+    color: #fff;
+    margin-top: 50px;
+    height: auto;
+    padding-top: 50px;
+
+    &_content{
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+        text-align: center;
+
+        h3{
+            font-size:20px;
+            font-weight:400;
+            text-transform: capitalize;
+            // line-height:3rem;
+        }
+
+        p{
+            max-width: 500px;
+            // margin: 10px auto;
+            // line-height: 28px;
+            font-size: 14px;
+        }
+
+        &_socials{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 0 3rem 0;
+
+            li{
+                margin: 0 10px;
+            }
+
+            a{
+                text-decoration:none;
+                color: #fff;
+            }
+
+            a:hover{
+                color: #fff;
+            }
+
+        }
+    }
+
+    &_bottom{
+        background-color: #272626;
+        padding: 20px 0 10px 0;
+        text-align: center;
+
+        p{
+            font-size: 14px;
+            word-spacing: 2px;
+            text-transform: capitalize;
+        }
+
+        span{
+            text-transform: capitalize;
+            opacity: .4;
+            font-weight:200;
+        }
+    }
+
 
 }
 
