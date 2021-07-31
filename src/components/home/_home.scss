@@ -136,6 +136,7 @@
             overflow: auto;
             white-space: nowrap;
             padding-bottom: 30px;
+            margin-top: 30px;
           }
           
           div.scrollmenu a {
@@ -151,8 +152,8 @@
         }
 
           .icons{
-              height: 70px;
-              width: 70px;
+              height: 80px;
+              width: 80px;
               margin: 0 30px;
           }
           .icons1{
@@ -211,12 +212,118 @@
     }
 
     &_fourth{
+        padding-bottom: 30px;
         h1{
             font-size: 64px;
             font-weight: bold;
             padding-top:7%;
-            padding-bottom: 7%;
+            padding-bottom: 3%;
+            text-align: center;
         }
+
+        .card-block {
+            height: 700px;
+            background-color:#4D4C4C;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .row{
+            overflow-x: auto;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        .card{
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position:center center;
+            border-radius:0.5rem;
+            overflow:hidden;
+
+            transition: transform 500ms ease;
+        }
+
+        .card:hover,.card-focus-within{
+            transform: scale(1.03);
+        }
+        .card.hover .card-title::after {
+            transform: scaleX(1);
+        }
+
+        .card-content {
+            --padding:1.5rem;
+            padding: var(--padding);
+            // background:rgba(250,250,250,0.4) ;
+            // opacity:0.5;
+
+            transform: translateY(65%);
+            transition: transform 800ms ease;
+            transition-delay: 80ms;
+             
+        }
+
+        .card-content > *:not(.card-title) {
+            opacity:0;
+            transition: opacity 800ms ease
+        }
+
+        .card:hover .card-content > * {
+            opacity:1;
+        }
+
+        .card-focus-within .card-content{
+            transition-duration: 0ms;
+        }
+
+        .card:hover .card-content,.card-focus-within .card-content{
+            transform: translateY(0)
+        }
+
+        .card-title{
+            position: relative;
+            width: max-content;
+            padding-bottom: 0.3rem;
+            font-weight: bold;
+        }
+
+        .card-title::after{
+            content:"";
+            left: calc(var(--padding)*-1);
+            bottom: -2px;
+            position: absolute;
+            height:4px;
+            background:#EB662D;
+            width: calc(100% + var(--padding));
+            transform:scaleX(0);
+            transition:transform 500ms ease;
+            transform-origin: left;
+        }
+
+        .card:hover .card-title::after {
+            transform: scaleX(1);
+        }
+
+
+        .button{
+            cursor: pointer;
+            display: inline;
+            text-decoration: none;
+            color:#fff;
+            background-color: #EB662D;
+            padding: .5em 1.25em;
+            border-radius: 7px;
+        }
+
+        .button:hover,.button:focus{
+            background-color: #c5440d;
+        }
+
     }
 
 }
@@ -291,6 +398,12 @@
             font-size:15px;
         }
     }
+
+    &_fourth{
+        .card-block{
+            height:500px;
+        }
+    }
 }
 
 @media (max-width:720px) {
@@ -335,6 +448,12 @@
             }
     
 
+        }
+
+        &_fourth{
+            .card-block{
+                height:500px;
+            }
         }
 
         @keyframes animate{

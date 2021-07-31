@@ -21,19 +21,15 @@ import {ReactComponent as BootstrapIcon} from '../../images/bootstrap.svg';
 import {ReactComponent as JqueryIcon} from '../../images/jquery.svg';
 
 
-
-
-
-
-
-
-
 import mainImage from '../../images/me.png';
 import blockchainImage from '../../images/blockchain.png';
 import codingImage from '../../images/coding.png';
 
+import cards from '../../cards'
+
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+
  
 const Home = () => {
 
@@ -163,9 +159,31 @@ const Home = () => {
                     <CIcon className="icons" /> 
                 </div>
             </div>
-            <div className="home_fourth container">
-                <h1 data-aos="fade-down"><span style={{color:'#EB662D'}}>MY POPULAR </span>WORKS ...</h1>
-
+            <div className="home_fourth">
+                <h1 data-aos="fade-down"><span style={{color:'#EB662D'}}>MY POPULAR </span>WORKS</h1>
+                <div data-aos='fade-left' class="container-fluid">
+                    <div class="row flex-nowrap">
+                    {
+                                cards.map(card =>
+                                    <div class="col-lg-3 col-md-6">
+                                        <div class="card card-block" style={{
+                                            backgroundImage: `url(${card.img})`
+                                        }}>
+                                            <div className="card-content mt-auto">
+                                                <div className="card-title">
+                                                    <h2>{card.title}</h2>
+                                            </div>
+                                            <div className="card-body">
+                                                {card.content}
+                                            </div>
+                                            <a target="_blank" rel="noreferrer"  href={card.link} className="button">Source code</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                    )
+                            }
+                    </div>
+                </div>
             </div>
         </div>
     )
