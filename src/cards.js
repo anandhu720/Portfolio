@@ -9,7 +9,7 @@ import memoriesImage from './images/MEMORY.jpg';
 
 var cards=[
     {
-        id:12,
+        id:1,
         title:"YouTube clone",
         link:"https://github.com/anandhu720/youtube-clone",
         live:"https://yt-clone-7.web.app",
@@ -17,7 +17,7 @@ var cards=[
         content:"A Youtube clone made using ReactJs, Redux, Firebase and Youtube API.All data is fetching from Youtube API. ",
     },
     {
-        id:8,
+        id:2,
         title:"Disney+ Clone",
         link:"https://github.com/anandhu720/disney-hotstar-clone",
         live:"https://determined-bardeen-6a04b8.netlify.app/",
@@ -25,7 +25,7 @@ var cards=[
         content:"Disney+ Hotstar clone Web App made by ReactJs.Made while studying Web designing using ReactJs.Its a clone website of disney+ hotstar website. "
     },
     {
-        id:1,
+        id:3,
         title:"Face Recognition",
         link:"https://github.com/anandhu720/facerecognizer",
         live:"https://github.com/anandhu720/facerecognizer",
@@ -33,7 +33,7 @@ var cards=[
         content:"It is a python program that can detect human face and can draw a rectangle over face detection.It is a simple project done by python and openCV.It is project done for studying openCV and python."
     },
     {
-        id:124,
+        id:4,
         title:"News App",
         link:"https://github.com/anandhu720/news-app",
         live:"https://github.com/anandhu720/news-app",
@@ -41,7 +41,7 @@ var cards=[
         content:"A simple mobile App which shows the latest news happening in India.It is build using React-native and Firebase.News API is used to fetch the real time news.It have basic features like login,sign up."
     },
     {
-            id:123,
+            id:5,
             title:"Instagram Clone",
             link:"https://github.com/anandhu720/instagram-clone",
             live:"https://github.com/anandhu720/instagram-clone",
@@ -49,7 +49,7 @@ var cards=[
             content:"Instagram clone mobile app developed using React-native,Firease and Redux.It only consist of Basic features of instagram like login,sign up,profile,feed,add post,like,comments."
     },
     {
-        id:2,
+        id:6,
         title:"MemoriesCard",
         link:"https://github.com/anandhu720/memories-app",
         live:"https://memoriescard-app.netlify.app",
@@ -58,7 +58,7 @@ var cards=[
     },
 
     {
-        id:6,
+        id:7,
         title:"To-do App",
         link:"https://github.com/anandhu720/webdev/tree/master/introNode",
         live:"https://anandhu-todolist.herokuapp.com/",
